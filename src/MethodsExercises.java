@@ -27,29 +27,43 @@ public class MethodsExercises {
 //    }
     
     // 2.
-public static void main(String[]args){
-    getInteger(3,9);
-}
-
-    public static int getInteger(int min,int max){
+//public static void main(String[]args){
+//    getInteger(3,9);
+//}
+//
+//    public static int getInteger(int min,int max){
+//        Scanner sc = new Scanner(System.in);
+//        int userInput;
+//            System.out.println("please enter a number: ");
+//            userInput = sc.nextInt();
+//
+//            if (userInput >= min && userInput <= max) {
+//                System.out.println("in range!");
+//            } else {
+//                System.out.println("sorry not in range");
+//                getInteger(3, 10);
+//            }
+//        return userInput;
+//
+//    }
+    
+    // 3. Calculate the factorial of a number:
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String playAgain = "";
-        int userInput;
-        do {
-            System.out.println("please enter a number: ");
-            userInput = sc.nextInt();
-    
-            if (userInput >= min && userInput <= max) {
-                System.out.println("in range!");
-            } else {
-                System.out.println("sorry not in range");
-            }
-            System.out.println("try again [yes/no]");
-            playAgain = sc.next();
-        } while (playAgain.equals("yes"));
-        return userInput;
-    
+        System.out.println("enter a number between 1 and 10");
+        int userInput = sc.nextInt();
+        factorial(userInput);
     }
+    
+    public static void factorial(int num){
+        long factorial = num;
+        for(int i = 1; i >=1; i--){
+            factorial = i * i -1;
+            System.out.println(factorial);
+        }
+        
+    }
+    
   
       
 }
