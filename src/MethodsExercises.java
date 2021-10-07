@@ -1,6 +1,8 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class MethodsExercises {
+
 //    public static void main(String[] args) {
 //        System.out.println(addition(5,10));
 //        System.out.println(subtraction(10,5));
@@ -47,23 +49,54 @@ public class MethodsExercises {
 //
 //    }
     
-    // 3. Calculate the factorial of a number:
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter a number between 1 and 10");
-        int userInput = sc.nextInt();
-        factorial(userInput);
-    }
+//     // 3. Calculate the factorial of a number:
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("enter a number between 1 and 10");
+//        int number = sc.nextInt();
+//        factorial(number);
+//    }
+////
+//    public static void factorial(int num){
+//        // for loop
+////        long factorial = 1;
+////        for(int i = 1; i <= num;  i++){
+////            factorial = factorial * i;
+////            System.out.println(factorial);
+////        }
+//
+//        // while loop
+//        long factorial = 1;
+//        int i = 1;
+//        while (i <= num){
+//            System.out.println(factorial + " * " + i + " = " + factorial * i);
+//            factorial = factorial * i;
+//            i++;
+//        }
+//        System.out.println("factorial of : " + num + " is: " + factorial);
+//
+//
+//    }
     
-    public static void factorial(int num){
-        long factorial = num;
-        for(int i = 1; i >=1; i--){
-            factorial = i * i -1;
-            System.out.println(factorial);
-        }
-        
-    }
-    
-  
-      
+//     // 4. Create an application that simulates dice rolling
+//    public static void main(String[] args) {
+//        dicePlay();
+//    }
+//
+//
+//    public static void dicePlay() {
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("please enter the number of sides for a pair of dice: ");
+//        int userInput = sc.nextInt();
+//        String playAgain = "";
+//        do {
+//            userInput +=1;
+//            int first = (int) (Math.random() * userInput);
+//            int second = (int) (Math.random() * userInput);
+//            System.out.println(first + " " + second);
+//            System.out.println("do you want to play again?[y/n]");
+//            playAgain = sc.next();
+//        } while (playAgain.equals("y"));
+//    }
+
 }
