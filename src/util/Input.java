@@ -14,33 +14,23 @@ public class Input {
         this.scanner = new Scanner(System.in);
         this.number = number;
         this.dub = dub;
-        this.answer = answer;
-        this.yesNo = yesNo;
     }
     
     public String getString(){
-        System.out.println("yes or no?");
-        this.answer = this.scanner.nextLine();
-        return this.answer;
+        return this.scanner.nextLine();
     }
     
     public boolean yesNo() {
-//        getString();
-        boolean playAgain = false;
-        while(playAgain) {
-            System.out.println("would you like to continue?[true/false]");
-            playAgain = scanner.nextBoolean();
-            if (this.answer.equalsIgnoreCase("y") || this.answer.equalsIgnoreCase("yes")) {
-                this.yesNo = true;
-                playAgain = false;
-                System.out.println("thanks for playing!");
-            } else {
-                playAgain = true;
-                this.yesNo = false;
-            }
-        };
-//        System.out.println(this.yesNo);
-        return playAgain;
+        System.out.println("yes or no?");
+        String answer = scanner.nextLine();
+        boolean playAgain;
+        if (answer.equalsIgnoreCase("yes") || answer.equalsIgnoreCase("y")) {
+            return true;
+        } else {
+            
+            return false;
+        }
+        
     }
     
     public int getInt(int min, int max) {
