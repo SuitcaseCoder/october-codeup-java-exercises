@@ -22,7 +22,7 @@ public class ArraysExercises {
         }
 
         // addPerson();
-        addPerson(persons, new Person("Rose ee"))
+        addPerson(persons, new Person("Rose ee"));
     }
     
     // create a static method that returns an array whose length is 1 greater than the passed array
