@@ -4,16 +4,12 @@ import java.util.ArrayList;
 
 public class Student {
     private String name;
-    private ArrayList<Integer>  grades;
+    public ArrayList<Integer>  grades;
     private Double average;
     
     public Student(String name, ArrayList<Integer> grades){
         this.name = name;
         this.grades = grades;
-    }
-    
-    public Student(String name){
-        this.name = name;
     }
     
     public String getName(){
@@ -26,7 +22,6 @@ public class Student {
     public double getGradeAverage(){
         double total = 0;
         for(Integer grade : grades){
-            System.out.println("grade: " + grade);
             total += grade;
         }
         return total/grades.size();
